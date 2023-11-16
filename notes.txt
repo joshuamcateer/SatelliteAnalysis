@@ -1,0 +1,16 @@
+	- Preprocessing
+        Colour mode changes
+        pan sharpening
+	- Detection of buildings, cars, planes,
+		Use a different yolo model for cars planes and buildings
+	- Precise building footprints
+		○ Yolov8 segments buildings well, although there is some error
+	- Generate GeoJson file of building footprints (no idea)
+		○ Geojson package takes in polygons which can come from yolov8
+	- Superimpose building footprints on images
+        yolo segmentation handles this
+	- Tag buildings with damage
+        The damage mapping handles this, although not specifically tagged
+	- Classify buildings as damaged or undamaged]
+	- Assess degree of damage, none, low, medium, high, full. (5 levels)
+		○ I couldn't find any specific data for this, however this would be easy to do using a simlar classifer to the one I impliement. I would just need more classes.
